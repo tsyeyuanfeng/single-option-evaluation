@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    div.am-g.am-padding-vertical-sm#header
+        div.am-u-sm-12.am-text-center.am-text-truncate 快来测测你的童年有多少分
+
+    div#container
+
+    script(src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js")
+    script(src="http://cdn.amazeui.org/amazeui/2.6.2/js/amazeui.min.js")
+
+    script(src="/javascripts/SingleOptEval.js")
+    script.
+        $.getJSON("/data.json", function(data) {
+            var singleOptEval = new SingleOptEval(data, $('#container'), function(result) {
+                alert('答题完毕');
+                console.log(result);
+            });
+            singleOptEval.start();
+        });
