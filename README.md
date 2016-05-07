@@ -4,8 +4,8 @@
 
 ## 依赖
 
-jQuery
-AmazeUI
+- jQuery
+- AmazeUI
 
 ## 安装
 
@@ -19,6 +19,12 @@ AmazeUI
 ## 访问
 
 在浏览器输入`http://localhost:3000`进行访问
+
+## 样例展示
+
+![样例图片1](http://github.com/tsyeyuanfeng/single-option-evaluation/raw/master/demo/demo1.png)
+![样例图片2](http://github.com/tsyeyuanfeng/single-option-evaluation/raw/master/demo/demo2.png)
+
 
 
 
