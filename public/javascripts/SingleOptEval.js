@@ -1,3 +1,10 @@
+/**
+ * 单项测评应用
+ * @param items      题目数据
+ * @param container  显示容器
+ * @param callback   回调(应该在回调里面调用API接口计算分数或跳转页面)
+ * @constructor
+ */
 var SingleOptEval = function(items, container, callback) {
     if(!items) throw new Error('items is not defined');
     if(!(items instanceof Array)) throw new Error('Type Error: items is not an array');
